@@ -1,0 +1,3 @@
+In Python you can make an interactive program by asking for input from users using the input() function
+In Python you can store many integers and strings in a list or a tuple
+In Python you can determine the length of a string by using the len() function

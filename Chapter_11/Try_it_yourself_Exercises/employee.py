@@ -1,0 +1,23 @@
+# Radovan Novakovity
+# Try it yourself 11-3.
+#  Write a class called Employee
+#  The __init__() method should take in a first name, a last name, and an annual salary, and store each of these as attributes
+#  Write a method called give_raise() that adds $5,000 to the annual salary by default but also accepts a different raise amount
+#  Write a test case for Employee
+#  Write two test methods, test_give_default _raise() and test_give_custom_raise()
+#  Use the setUp() method so you don’t have to create a new employee instance in each test method
+#  Run your test case, and make sure both tests pass
+
+class Employee:
+    """Stores information about employees."""
+
+    def __init__(self, first_name, last_name, annual_salary=0):
+        """Stores specific information about given employees."""
+        self.first_name = first_name.title()
+        self.last_name = last_name.title()
+        self.annual_salary = annual_salary
+
+    # This method gives 5000 raise by default, but accepts custom amount too
+    def give_raise(self, raise_amount=5000):
+        """Increases the salary."""
+        self.annual_salary += raise_amount
